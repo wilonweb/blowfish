@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56260&amp;path=livereload" data-no-instant defer></script>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="false"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=51633&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="http://localhost:56260/my-article-2/" />
+  <link rel="canonical" href="http://localhost:51633/my-article-2/" />
   
   
   
@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.faa72361590a93dc06747aa5c3d7864e479f16601b29cd516522276c618b7cb3a5b43d7925033388bba1a135856a78efb101b35953be44be3dc6b0c40d1287b0.css"
-    integrity="sha512-&#43;qcjYVkKk9wGdHqlw9eGTkefFmAbKc1RZSInbGGLfLOltD15JQMziLuhoTWFanjvsQGzWVO&#43;RL49xrDEDRKHsA==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.ac59a1b8eaafef739c129d12787ac29f6a420bcb348c7aeec8949a8d0b7d6c2023766c169d14b9031b751504eb3c976efe786fec135b340a49868acd8caa4127.css"
+    integrity="sha512-rFmhuOqv73OcEp0SeHrCn2pCC8s0jHruyJSajQt9bCAjdmwWnRS5Axt1FQTrPJdu/nhv7BNbNApJhorNjKpBJw==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -60,7 +60,7 @@
   
   
   
-  <meta property="og:url" content="http://localhost:56260/my-article-2/">
+  <meta property="og:url" content="http://localhost:51633/my-article-2/">
   <meta property="og:site_name" content="Blowfish">
   <meta property="og:title" content="Article 2 héhé">
   <meta property="og:description" content="Bonjour #test dzre">
@@ -69,8 +69,10 @@
   <meta property="article:section" content="">
     <meta property="article:published_time" content="2021-03-17T00:00:00+00:00">
     <meta property="article:modified_time" content="2021-03-17T00:00:00+00:00">
+    <meta property="og:image" content="http://localhost:51633/my-article-2/featured.svg">
 
-  <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Article 2 héhé">
+  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:51633/my-article-2/featured.svg"><meta name="twitter:title" content="Article 2 héhé">
 <meta name="twitter:description" content="Bonjour #test dzre">
 
   
@@ -84,7 +86,7 @@
     
     "abstract": "Bonjour #\rtest dzre",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:56260\/my-article-2\/",
+    "url" : "http:\/\/localhost:51633\/my-article-2\/",
     "author" : {
       "@type": "Person",
       "name": ""
@@ -150,7 +152,11 @@
   </div>
   
   
-  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+  <div class="min-h-[148px]"></div>
+<div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div class="relative max-w-[64rem] ml-auto mr-auto">
+    <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
     
     <div class="flex flex-1 items-center justify-between">
@@ -208,7 +214,7 @@
     <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
       <div class="flex flex-col space-y-3">
         
-        <a href="/tuto/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
           
           <p class="text-sm font-sm" title="">
             Tuto
@@ -423,7 +429,7 @@
 </li>
 
 <li class="mt-1">
-    <a href="/tuto/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-sm font-small" title="">
             Tuto
@@ -474,6 +480,26 @@
 
 
 
+<script>
+    (function () {
+        var $mainmenu = $('.main-menu');
+        var path = window.location.pathname;
+        $mainmenu.find('a[href="' + path + '"]').each(function (i, e) {
+            $(e).children('p').addClass('active');
+        });
+    })();
+</script>
+
+
+  </div>
+</div>
+<script>
+  window.addEventListener('scroll', function (e) {
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    var background_blur = document.getElementById('menu-blur');
+    background_blur.style.opacity = (scroll / 300);
+  });
+</script>
 
   
   <div class="relative flex flex-col grow">
@@ -488,12 +514,40 @@
   
   
   
- 
-
+        
+            <div class="w-full h-36 md:h-56 lg:h-72 single_hero_basic nozoom" style="background-image:url(/my-article-2/featured.svg);"></div>
+        
+    
   
   
 
   <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >Welcome to Blowfish! :tada:</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/my-article-2/"
+      >Article 2 héhé</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
       Article 2 héhé
@@ -514,19 +568,19 @@
 
 
 
-  
 
-
-
-
-
-  
 
 
 
   
 
 
+
+  
+
+
+
+  
 
 
 
@@ -541,7 +595,29 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2021-03-17 00:00:00 &#43;0000 UTC">17 March 2021</time><span class="px-2 text-primary-500">&middot;</span><span>5 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+  <span>5 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span><span class="px-2 text-primary-500">&middot;</span><span>
+  
+  
+    
+    
+      
+      
+        
+        
+      
+      
+    
+  
+  <span id="views_my-article-2\index.md" class="animate-pulse inline-block text-transparent max-h-3 rounded-full mt-[-2px] align-middle bg-neutral-300 dark:bg-neutral-400" title="views">loading</span>
+  <span class="inline-block align-text-bottom">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+<path fill="currentColor" d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+  </span>
+
+</span>
+</span>
   
 
   
@@ -567,24 +643,9 @@
     
       
       
-        
-        
-<div class="flex author">
-  
-  <div class="place-self-center">
-    
-    
-    <div class="text-2xl sm:text-lg">
-</div>
-  </div>
-</div>
 
       
 
-      
-
-      
-      <div class="mb-5"></div>
       
 
     
@@ -593,7 +654,83 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open class="toc-right mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bonjour">Bonjour</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#bonjour">Bonjour</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+ 
+<script>
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = e.attr('id');
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+           
+            $(e).removeClass('active').siblings('ul').hide();
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
+        
+        onScroll();
+      });
+    }
+  })();
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -651,20 +788,18 @@ dzre</p>
     
     
     
+      
+      
+    
     <div class="pt-8">
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/my-awesome-article/">
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/my-article-3/">
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
@@ -672,14 +807,17 @@ dzre</p>
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2021-03-17 00:00:00 &#43;0000 UTC">17 March 2021</time>
-                  
                 </span>
               </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
             </a>
-          
-        </span>
-        <span>
           
         </span>
       </div>
@@ -743,7 +881,7 @@ dzre</p>
 </footer><div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="http://localhost:56260/"
+  data-url="http://localhost:51633/"
   style="z-index:500"
 >
   <div

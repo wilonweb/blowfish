@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Blowfish</title>
-    <link>http://localhost:53336/series/</link>
-    <description>Recent content in Series on Blowfish</description>
+    <title>Series on WilOnWeb</title>
+    <link>http://localhost:1313/series/</link>
+    <description>Recent content in Series on WilOnWeb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53336/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>http://localhost:53336/series/blog/</link>
+      <link>http://localhost:1313/series/blog/</link>
       <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53336/series/blog/</guid>
+      <guid>http://localhost:1313/series/blog/</guid>
       <description></description>
       
     </item>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Toto on Blowfish</title>
-    <link>http://localhost:53336/tags/toto/</link>
-    <description>Recent content in Toto on Blowfish</description>
+    <title>Toto on WilOnWeb</title>
+    <link>http://localhost:1313/tags/toto/</link>
+    <description>Recent content in Toto on WilOnWeb</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 </copyright>
-    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:53336/tags/toto/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/toto/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My-blog-1</title>
-      <link>http://localhost:53336/blog/my-blog/</link>
+      <link>http://localhost:1313/blog/my-blog/</link>
       <pubDate>Wed, 17 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:53336/blog/my-blog/</guid>
-      <description>Bonjour #</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:53336/blog/my-blog/featured.svg" />
+      <guid>http://localhost:1313/blog/my-blog/</guid>
+      <description>Bonjour #Ceci est un texte par ce qu&amp;rsquo;il lui faut du Lorem ip</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/my-blog/featured.svg" />
     </item>
     
   </channel>
